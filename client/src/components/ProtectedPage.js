@@ -81,7 +81,7 @@ function ProtectedPage({ children }) {
             className="text-2xl text-white cursor-pointer"
             onClick={() => navigate("/")}
           >
-            NAVEEN MP
+            PRASANNA MP
           </h1>
 
           <div className="bg-white py-2 px-5 rounded flex gap-1 items-center">
