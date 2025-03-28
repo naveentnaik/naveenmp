@@ -1,5 +1,4 @@
 const express = require('express');
-const router = express.Router();
 const app = express();
 app.use(express.json());
 require('dotenv').config();
@@ -10,10 +9,6 @@ const usersRoute = require('./routes/usersRoute');
 const productsRoute = require('./routes/productsRoute');
 const bidsRoute = require('./routes/bidsRoute');
 const notificationsRoute = require('./routes/notificationsRoute');
-
-router.get("/", (req, res) => {
-    res.json({ message: "API is working!" });
-});
 
 app.use('/api/users', usersRoute);
 app.use('/api/products', productsRoute);
