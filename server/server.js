@@ -10,6 +10,10 @@ const productsRoute = require('./routes/productsRoute');
 const bidsRoute = require('./routes/bidsRoute');
 const notificationsRoute = require('./routes/notificationsRoute');
 
+router.get("/", (req, res) => {
+    res.json({ message: "API is working!" });
+});
+
 app.use('/api/users', usersRoute);
 app.use('/api/products', productsRoute);
 app.use('/api/bids', bidsRoute);
